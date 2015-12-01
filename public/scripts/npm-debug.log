@@ -1,0 +1,251 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'coffee-script' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.6
+4 verbose install initial load of C:\Users\user\AppData\Roaming\npm\package.json
+5 verbose readDependencies loading dependencies from C:\Users\user\AppData\Roaming\npm\package.json
+6 silly cache add args [ 'coffee-script', null ]
+7 verbose cache add spec coffee-script
+8 silly cache add parsed spec { raw: 'coffee-script',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'coffee-script',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed coffee-script@*
+10 verbose addNamed "*" is a valid semver range for coffee-script
+11 silly addNameRange { name: 'coffee-script', range: '*', hasData: false }
+12 silly mapToRegistry name coffee-script
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+16 verbose addNameRange registry:https://registry.npmjs.org/coffee-script not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/coffee-script
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 09:56:48
+20 verbose request id 8ae3853db97a1fd0
+21 verbose etag "51QE2SRG1308OKWQZKY2BCZT6"
+22 http request GET https://registry.npmjs.org/coffee-script
+23 http 200 https://registry.npmjs.org/coffee-script
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"2CB0UM2PWGT22KUS14QQOSDDS"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '40900',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Wed, 14 Oct 2015 00:57:26 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '54',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-nrt6131-NRT',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1444784246.221117,VS0,VE0',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving coffee-script to C:\Users\user\AppData\Roaming\npm-cache\registry.npmjs.org\coffee-script\.cache.json
+26 silly addNameRange number 2 { name: 'coffee-script', range: '*', hasData: true }
+27 silly addNameRange versions [ 'coffee-script',
+27 silly addNameRange   [ '0.7.0',
+27 silly addNameRange     '0.7.1',
+27 silly addNameRange     '0.7.2',
+27 silly addNameRange     '0.9.0',
+27 silly addNameRange     '0.9.1',
+27 silly addNameRange     '0.9.2',
+27 silly addNameRange     '0.9.3',
+27 silly addNameRange     '0.9.4',
+27 silly addNameRange     '0.9.5',
+27 silly addNameRange     '0.9.6',
+27 silly addNameRange     '1.0.0',
+27 silly addNameRange     '1.0.1',
+27 silly addNameRange     '1.1.0',
+27 silly addNameRange     '1.1.1',
+27 silly addNameRange     '1.1.2',
+27 silly addNameRange     '1.1.3',
+27 silly addNameRange     '1.2.0',
+27 silly addNameRange     '1.3.0',
+27 silly addNameRange     '1.3.1',
+27 silly addNameRange     '1.3.2',
+27 silly addNameRange     '1.3.3',
+27 silly addNameRange     '1.4.0',
+27 silly addNameRange     '1.5.0',
+27 silly addNameRange     '1.6.0',
+27 silly addNameRange     '1.6.1',
+27 silly addNameRange     '1.6.2',
+27 silly addNameRange     '1.6.3',
+27 silly addNameRange     '1.7.0',
+27 silly addNameRange     '1.7.1',
+27 silly addNameRange     '1.8.0',
+27 silly addNameRange     '1.9.0',
+27 silly addNameRange     '1.9.1',
+27 silly addNameRange     '1.9.2',
+27 silly addNameRange     '1.9.3',
+27 silly addNameRange     '1.10.0' ] ]
+28 silly addNamed coffee-script@1.10.0
+29 verbose addNamed "1.10.0" is a plain semver version for coffee-script
+30 silly mapToRegistry name coffee-script
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+34 verbose addRemoteTarball https://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz',
+35 verbose addRemoteTarball   '12938bcf9be1948fa006f92e0c4c9e81705108c0' ]
+36 info retry fetch attempt 1 at 09:56:49
+37 info attempt registry request try #1 at 09:56:49
+38 http fetch GET https://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz
+39 http fetch 200 https://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz
+40 silly fetchAndShaCheck shasum 12938bcf9be1948fa006f92e0c4c9e81705108c0
+41 verbose addTmpTarball C:\Users\user\AppData\Local\Temp\npm-13096-65f66c0a\registry.npmjs.org\coffee-script\-\coffee-script-1.10.0.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for coffee-script@1.10.0
+43 silly cache afterAdd coffee-script@1.10.0
+44 verbose afterAdd C:\Users\user\AppData\Roaming\npm-cache\coffee-script\1.10.0\package\package.json not in flight; writing
+45 verbose afterAdd C:\Users\user\AppData\Roaming\npm-cache\coffee-script\1.10.0\package\package.json written
+46 silly install resolved [ { name: 'coffee-script',
+46 silly install resolved     description: 'Unfancy JavaScript',
+46 silly install resolved     keywords: [ 'javascript', 'language', 'coffeescript', 'compiler' ],
+46 silly install resolved     author: { name: 'Jeremy Ashkenas' },
+46 silly install resolved     version: '1.10.0',
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     engines: { node: '>=0.8.0' },
+46 silly install resolved     directories: { lib: './lib/coffee-script' },
+46 silly install resolved     main: './lib/coffee-script/coffee-script',
+46 silly install resolved     bin: { coffee: './bin/coffee', cake: './bin/cake' },
+46 silly install resolved     preferGlobal: true,
+46 silly install resolved     scripts:
+46 silly install resolved      { test: 'node ./bin/cake test',
+46 silly install resolved        'test-harmony': 'node --harmony ./bin/cake test' },
+46 silly install resolved     homepage: 'http://coffeescript.org',
+46 silly install resolved     bugs: { url: 'https://github.com/jashkenas/coffeescript/issues' },
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'git://github.com/jashkenas/coffeescript.git' },
+46 silly install resolved     devDependencies:
+46 silly install resolved      { 'uglify-js': '~2.2',
+46 silly install resolved        jison: '>=0.2.0',
+46 silly install resolved        'highlight.js': '~8.0.0',
+46 silly install resolved        underscore: '~1.5.2',
+46 silly install resolved        docco: '~0.7.0' },
+46 silly install resolved     gitHead: 'f26d33d418dcdcfcc6ad3ab774d9cabbf7af659c',
+46 silly install resolved     _id: 'coffee-script@1.10.0',
+46 silly install resolved     _shasum: '12938bcf9be1948fa006f92e0c4c9e81705108c0',
+46 silly install resolved     _from: 'coffee-script@*',
+46 silly install resolved     _npmVersion: '1.4.28',
+46 silly install resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+46 silly install resolved     maintainers: [ [Object], [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '12938bcf9be1948fa006f92e0c4c9e81705108c0',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz' },
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.10.0.tgz' } ]
+47 info install coffee-script@1.10.0 into C:\Users\user\AppData\Roaming\npm
+48 info installOne coffee-script@1.10.0
+49 verbose installOne of coffee-script to C:\Users\user\AppData\Roaming\npm not in flight; installing
+50 verbose lock using C:\Users\user\AppData\Roaming\npm-cache\_locks\coffee-script-86082f33f87042dc.lock for C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script
+51 silly install write writing coffee-script 1.10.0 to C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script
+52 verbose unbuild node_modules\coffee-script
+53 silly gentlyRm C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script is being purged from base C:\Users\user\AppData\Roaming\npm
+54 verbose gentlyRm don't care about contents; nuking C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script
+55 verbose tar unpack C:\Users\user\AppData\Roaming\npm-cache\coffee-script\1.10.0\package.tgz
+56 verbose tar unpacking to C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script
+57 silly gentlyRm C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script is being purged
+58 verbose gentlyRm don't care about contents; nuking C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script
+59 silly gunzTarPerm modes [ '777', '666' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+62 silly gunzTarPerm extractEntry .npmignore
+63 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+64 silly gunzTarPerm extractEntry README.md
+65 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+66 silly gunzTarPerm extractEntry LICENSE
+67 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+68 silly gunzTarPerm extractEntry register.js
+69 silly gunzTarPerm modified mode [ 'register.js', 420, 438 ]
+70 silly gunzTarPerm extractEntry repl.js
+71 silly gunzTarPerm modified mode [ 'repl.js', 420, 438 ]
+72 silly gunzTarPerm extractEntry bin/cake
+73 silly gunzTarPerm modified mode [ 'bin/cake', 493, 511 ]
+74 silly gunzTarPerm extractEntry bin/coffee
+75 silly gunzTarPerm modified mode [ 'bin/coffee', 493, 511 ]
+76 silly gunzTarPerm extractEntry bower.json
+77 silly gunzTarPerm modified mode [ 'bower.json', 420, 438 ]
+78 silly gunzTarPerm extractEntry CONTRIBUTING.md
+79 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 438 ]
+80 silly gunzTarPerm extractEntry lib/coffee-script/browser.js
+81 silly gunzTarPerm modified mode [ 'lib/coffee-script/browser.js', 420, 438 ]
+82 silly gunzTarPerm extractEntry lib/coffee-script/grammar.js
+83 silly gunzTarPerm modified mode [ 'lib/coffee-script/grammar.js', 420, 438 ]
+84 silly gunzTarPerm extractEntry lib/coffee-script/helpers.js
+85 silly gunzTarPerm modified mode [ 'lib/coffee-script/helpers.js', 420, 438 ]
+86 silly gunzTarPerm extractEntry lib/coffee-script/index.js
+87 silly gunzTarPerm modified mode [ 'lib/coffee-script/index.js', 420, 438 ]
+88 silly gunzTarPerm extractEntry lib/coffee-script/lexer.js
+89 silly gunzTarPerm modified mode [ 'lib/coffee-script/lexer.js', 420, 438 ]
+90 silly gunzTarPerm extractEntry lib/coffee-script/command.js
+91 silly gunzTarPerm modified mode [ 'lib/coffee-script/command.js', 420, 438 ]
+92 silly gunzTarPerm extractEntry lib/coffee-script/optparse.js
+93 silly gunzTarPerm modified mode [ 'lib/coffee-script/optparse.js', 420, 438 ]
+94 silly gunzTarPerm extractEntry lib/coffee-script/parser.js
+95 silly gunzTarPerm modified mode [ 'lib/coffee-script/parser.js', 493, 511 ]
+96 silly gunzTarPerm extractEntry lib/coffee-script/register.js
+97 silly gunzTarPerm modified mode [ 'lib/coffee-script/register.js', 420, 438 ]
+98 silly gunzTarPerm extractEntry lib/coffee-script/repl.js
+99 silly gunzTarPerm modified mode [ 'lib/coffee-script/repl.js', 420, 438 ]
+100 silly gunzTarPerm extractEntry lib/coffee-script/rewriter.js
+101 silly gunzTarPerm modified mode [ 'lib/coffee-script/rewriter.js', 420, 438 ]
+102 silly gunzTarPerm extractEntry lib/coffee-script/coffee-script.js
+103 silly gunzTarPerm modified mode [ 'lib/coffee-script/coffee-script.js', 420, 438 ]
+104 silly gunzTarPerm extractEntry lib/coffee-script/scope.js
+105 silly gunzTarPerm modified mode [ 'lib/coffee-script/scope.js', 420, 438 ]
+106 silly gunzTarPerm extractEntry lib/coffee-script/cake.js
+107 silly gunzTarPerm modified mode [ 'lib/coffee-script/cake.js', 420, 438 ]
+108 silly gunzTarPerm extractEntry lib/coffee-script/sourcemap.js
+109 silly gunzTarPerm modified mode [ 'lib/coffee-script/sourcemap.js', 420, 438 ]
+110 silly gunzTarPerm extractEntry lib/coffee-script/nodes.js
+111 silly gunzTarPerm modified mode [ 'lib/coffee-script/nodes.js', 420, 438 ]
+112 silly gunzTarPerm extractEntry CNAME
+113 silly gunzTarPerm modified mode [ 'CNAME', 420, 438 ]
+114 verbose write writing to C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script\package.json
+115 info preinstall coffee-script@1.10.0
+116 verbose readDependencies loading dependencies from C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script\package.json
+117 verbose readDependencies loading dependencies from C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script\package.json
+118 silly install resolved []
+119 verbose about to build C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script
+120 info build C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script
+121 info linkStuff coffee-script@1.10.0
+122 silly linkStuff coffee-script@1.10.0 has C:\Users\user\AppData\Roaming\npm\node_modules as its parent node_modules
+123 silly linkStuff coffee-script@1.10.0 is part of a global install
+124 silly linkStuff coffee-script@1.10.0 is installed into a global node_modules
+125 silly linkStuff coffee-script@1.10.0 is installed into the top-level global node_modules
+126 verbose linkBins coffee-script@1.10.0
+127 verbose link bins [ { coffee: './bin/coffee', cake: './bin/cake' },
+127 verbose link bins   'C:\\Users\\user\\AppData\\Roaming\\npm',
+127 verbose link bins   true ]
+128 verbose linkMans coffee-script@1.10.0
+129 verbose rebuildBundles coffee-script@1.10.0
+130 info install coffee-script@1.10.0
+131 info postinstall coffee-script@1.10.0
+132 verbose unlock done using C:\Users\user\AppData\Roaming\npm-cache\_locks\coffee-script-86082f33f87042dc.lock for C:\Users\user\AppData\Roaming\npm\node_modules\coffee-script
+133 verbose validateInstall loading C:\Users\user\AppData\Roaming\npm\package.json for validation
+134 verbose stack Error: The package phantomjs does not satisfy its siblings' peerDependencies requirements!
+134 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:125:32
+134 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:267:7
+134 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:138:5
+134 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+134 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+134 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+134 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+134 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+134 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+134 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+135 verbose cwd c:\Users\user\desktop\uiine base\scripts
+136 error Windows_NT 6.1.7601
+137 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "coffee-script"
+138 error node v0.12.6
+139 error npm  v2.11.2
+140 error code EPEERINVALID
+141 error peerinvalid The package phantomjs does not satisfy its siblings' peerDependencies requirements!
+141 error peerinvalid Peer mocha-phantomjs@3.5.6 wants phantomjs@~1.9.1
+142 verbose exit [ 1, true ]

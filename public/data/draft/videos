@@ -1,0 +1,26 @@
+[skrillex]
+--(view)
+title= "Sync - Skrillex"
+script(src="./scripts/skrillex.js")
+--(script)
+$video_origin.src = "./videos/skrillex_bangarang_origin.mp4"
+$video_copy.src = "./videos/skrillex_bangarang_cover_01.mp4"
+$video_origin.currentTime = 0
+$video_origin.volume = 0.5
+$video_copy.volume = 0.55
+$video_copy.currentTime = 1.27261
+--(style)
+background: url(../images/logo-wrap.jpg) no-repeat center center fixed;
+[taylor_swift]
+--(view)
+title= "Sync - Taylor Swift"
+script(src="./scripts/taylor_swift.js")
+--(script)
+$video_origin.src = "./videos/taylor_swift_shake_it_off_origin.mp4"
+$video_copy.src = "./videos/taylor_swift_shake_it_off_cover_01.mp4"
+$video_origin.currentTime = 0
+$video_origin.volume = 0.4
+$video_copy.volume = 0.55
+$video_copy.currentTime = 0.08
+--(style)
+background: url(../images/taylor_swift.jpg) no-repeat center center fixed;

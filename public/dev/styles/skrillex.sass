@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100)
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+html, body
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+
+body
+  background: rgba(255, 255, 255, 1)
+  
+header
+  width: 100%
+  position: fixed
+  min-height: 34.9415px
+  border-bottom: 1px solid rgba(255, 255, 255, 0.855)
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  
+  div.menu
+    flex-flow: row
+    width: 100%
+    border-right: 1px solid rgba(255, 255, 255, 1)
+
+  div.menu.about
+    background: url(../images/menu.svg) no-repeat
+    background-position: 50%
+    background-size: 19px
+    opacity: 0.618
+    
+  div.menu.search
+    background: url(../images/search.svg) no-repeat
+    background-position: 50%
+    background-size: 18px
+    opacity: 0.618
+
+  div.menu.share
+    background: url(../images/share.svg) no-repeat
+    background-position: 50%
+    background-size: 19px
+    opacity: 0.618
+    
+  div.menu.home
+    background: url(../images/home.svg) no-repeat
+    background-position: 50%
+    background-size: 19px
+    
+div.logo-wrap
+  width: 100%
+  background-color: rgba(37, 37, 37, 1)
+  text-align: center
+  background: url(../images/logo-wrap.jpg) no-repeat center center fixed 
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+  div.shadow
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, .318)
+
+.pshow
+  display: none
+  position: fixed
+  width: 100%
+  height: 100%
+  bottom: 0
+  
+
+body.play div.logo-wrap
+  position: fixed
+  z-index: 1
+  height: 100% !important
+  overflow: hidden
+  
+  video
+    width: 50%
+    height: 100%
+  
+  .phide
+    display: none
+
+  .pshow
+     display: -webkit-flex
+     display: -moz-flex
+     display: -ms-flex
+     display: -o-flex
+     display: flex
+     flex-flow: row nowrap
+
+div.articles
+  background-color: rgba(255, 255, 255, 1)
+  text-align: center
+
+div.split
+  position: absolute
+  background-color: rgba(255, 255, 255, 1)
+  opacity: 0
+  left: 0
+
+section.a01
+  width: 100%
+  background-color: rgba(37, 37, 37, 1)
+  text-align: center
+  background: url(../images/a01.jpg) no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  opacity: 0
+
+h1.logo
+  margin-left: -1px
+  position: absolute
+  font-family: 'roboto', sans-serif
+  color: rgba(255, 255, 255, 0.88)
+  font-weight: 100
+  font-size: 64px
+  width: 100%
+  text-align: center
+
+h1.title
+  font-weight: 200
+  font-family: "roboto", sans-serif
+  color: rgba(255, 255, 255, 0.88)
+  font-size: 22px
+  margin-left: 2px
+  position: absolute
+  width: 100%
+  margin-top: 0px
+  margin-bottom: 0px
+  display: none
+
+body.en
+  h2.logo
+    font-weight: 100
+    font-family: "roboto", sans-serif
+    color: rgba(255, 255, 255, 0.88)
+    font-size: 19px
+    text-indent: 2px
+    position: absolute
+    width: 100%
+    margin-top: 0px
+    margin-bottom: 0px
+    text-decoration: underline
+
+  p.next
+    margin: 0px
+    font-family: 'roboto', sans-serif
+    width: 100%
+    position: absolute
+    font-weight: 300
+    color: rgba(97,97,97,1)
+    margin-top: 70px
+    font-size: 15px
+    text-indent: 2px
+
+body.ja
+  h2.logo
+    font-weight: 100
+    font-family: "roboto", sans-serif
+    color: rgba(255, 255, 255, 0.88)
+    font-size: 19px
+    text-indent: 2px
+    position: absolute
+    width: 100%
+    margin-top: 0px
+    margin-bottom: 0px
+    text-decoration: underline
+
+  p.next
+    margin: 0px
+    font-family: 'Noto Sans Japanese', serif
+    width: 100%
+    position: absolute
+    font-weight: 200
+    color: rgba(97,97,97,1)
+    margin-top: 70px
+    font-size: 14px
+    text-indent: 2px
+
+img.logo-play
+  position: absolute
+  width: 44px
+  height: 42px
+  left: 50%
+  margin-left: -21px
+  cursor: pointer
+
+audio.logo
+  position: absolute
+  left: 0
+  opacity: 0
+  display: 0
+  
+img.down
+  position: absolute
+  width: 40px
+  height: 40px
+  left: 50%
+  margin-left: -19px
+  
+div.controller
+  position: fixed
+  bottom: 0px
+  width: 100%
+  min-height: 37.1706px
+  z-index: 2
+  display: none
+
+body.play div.controller
+  display: block
+
+div.controller
+  div.close
+    position: fixed
+    top: 0px
+    right: 0px
+    background: url(../images/cross.svg)
+    background-size: 49%
+    background-position: 50%
+    background-repeat: no-repeat
+    margin-bottom: 0px
+    margin-left: -1px
+    cursor: pointer
+
+  div.repeat
+    position: fixed
+    top: 0px
+    left: 0px
+    background: url(../images/repeat.svg)
+    background-size: 55%
+    background-position: 50%
+    background-repeat: no-repeat
+    margin-top: -1.5px
+    margin-left: -1px
+    cursor: pointer
+
+  div.detail
+    position: fixed
+    bottom: 0px
+    right: 0px
+    background: url(../images/menu.svg)
+    background-size: 61.8034%
+    background-position: 50%
+    background-repeat: no-repeat
+    margin-bottom: 0px
+    margin-right: 0px
+    cursor: pointer
+  
+  div.meter
+    position: fixed
+    background: rgba(255,255,255,.855)
+    width: calc(100% - 44px)
+    height: 1px
+    bottom: 19px
+    left: 5px
+    
+  div.meter.current
+    background: rgba(255, 97, 97, .914)
+    width: 0px
+  
+div.origin
+  width: 50%
+  height: 100%
+  position: absolute
+  left: 0px
+  background: rgba(255, 255, 255, .855);
+  z-index: -1;
+
+div.copy
+  width: 50%
+  height: 100%
+  position: absolute
+  right: 0px
+  background: rgba(255, 255, 255, .855);
+  z-index: -1
+
+div.mask
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0px
+  left: 0px
+  z-index: 1
+  
+.video-fade
+  opacity: 0
+  transition: opacity 500ms ease-out
+  
+div.lyric
+  width: 100%
+  position: fixed
+  bottom: 0px
+  
+  p.en
+    margin: 0px
+    color: rgba(255, 255, 255, 0.855)
+    font-family: "roboto", sans-serif
+    font-weight: 200
+    font-size: 18px
+    cursor: default
+    height: 24px
+    
+  p.ja
+    margin: 0px
+    color: rgba(255, 255, 255, 0.855)
+    font-family: "roboto", sans-serif
+    font-weight: 200
+    font-size: 18px
+    cursor: default
+    height: 24px
