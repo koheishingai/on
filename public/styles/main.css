@@ -8,7 +8,7 @@ html, body {
   height: 100%; }
 
 body {
-  background: white; }
+  background: #fff; }
 
 .fade {
   opacity: 0;
@@ -61,14 +61,18 @@ header {
     opacity: 0.764;
     border-right: 1px solid rgba(255, 255, 255, 0); }
 
-img.logo-play {
+.logo-play {
   position: absolute;
-  width: 44px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
   left: 50%;
   margin-left: -21px;
   cursor: default;
-  opacity: 1; }
+  z-index: 1; }
+  .logo-play svg {
+    margin-left: -7px;
+    margin-top: -9px;
+    zoom: 65%; }
 
 img.logo-more {
   position: absolute;
@@ -84,18 +88,19 @@ img.logo-more {
 img.logo {
   min-width: 203.963px;
   max-width: 237.248px;
-  margin-left: 0px;
-  opacity: 1; }
+  margin-left: 0px; }
 
 div.shadow {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.318); }
+  background-color: rgba(0, 0, 0, 0.318);
+  z-index: 1;
+  position: absolute; }
 
 div.main {
   width: 100%;
   background-color: rgba(23, 23, 23, 0.944);
-  background: url(../images/logo-wrap.jpg) no-repeat center center fixed;
+  background: url(../images/logo-wrap.gif) no-repeat center center fixed;
   text-align: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -103,6 +108,29 @@ div.main {
   background-size: cover;
   position: relative;
   top: 0px; }
+  div.main div.contents {
+    width: 100%;
+    background: url(../images/logo-wrap2.gif) no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    opacity: 0; }
+  div.main div.shadow {
+    background-color: rgba(0, 0, 0, 0.1); }
+  div.main div.cover {
+    width: 100%;
+    background: url(../images/4.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    display: none;
+    opacity: 1; }
+
+div.main.play div.contents {
+  opacity: 1;
+  transition: opacity, 0.3s, ease-in; }
 
 div.bottom_menu {
   position: relative;
@@ -116,7 +144,35 @@ div.bottom_menu {
   flex-flow: row nowrap;
   border-top: 1px solid rgba(255, 255, 255, 0.855);
   text-align: center;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #fff;
+  min-height: 34.9415px; }
+  div.bottom_menu #fsl {
+    color: rgba(97, 97, 97, 0.855);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    margin-left: 3px;
+    white-space: nowrap;
+    position: absolute;
+    left: 0px;
+    cursor: default; }
+    div.bottom_menu #fsl a {
+      padding-left: 27px;
+      margin: 0 !important; }
+  div.bottom_menu #fsr {
+    color: rgba(97, 97, 97, 0.713);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    margin-right: 3px;
+    white-space: nowrap;
+    position: absolute;
+    right: 0px;
+    cursor: default; }
+    div.bottom_menu #fsr a {
+      padding-right: 2px;
+      margin: 0 !important; }
   div.bottom_menu div.menu {
     width: 100%;
     background-size: cover !important;
@@ -154,8 +210,6 @@ div.bottom {
   /* display: -ms-flex */
   /* display: -o-flex */
   border-top: 1px solid rgba(255, 255, 255, 0.618); }
-  div.bottom div.main {
-    background: url(../images/taylor_swift.jpg) no-repeat center center fixed; }
   div.bottom div.menu.edge {
     border-right: none; }
   div.bottom div.menu {
@@ -173,16 +227,51 @@ div.bottom {
         text-align: center;
         font-size: 25px;
         cursor: default; }
-  div.bottom div.menu.glasses {
-    background: url(../images/try.jpg); }
-    div.bottom div.menu.glasses div.shadow {
-      background-color: rgba(0, 0, 0, 0.145);
-      position: absolute; }
-  div.bottom div.menu.phone {
-    background: url(../images/photo.jpg); }
-    div.bottom div.menu.phone div.shadow {
-      background-color: rgba(0, 0, 0, 0.145);
-      position: absolute; }
+  div.bottom div.contents {
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    opacity: 0; }
+  div.bottom div.cover {
+    width: 100%;
+    background: url(../images/taylor_swift.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    opacity: 1;
+    display: none; }
+  div.bottom div.shadow {
+    background-color: rgba(0, 0, 0, 0.15); }
+  div.bottom img.logo {
+    min-width: 203.963px;
+    max-width: 237.248px; }
+  div.bottom img.logo-play {
+    position: absolute;
+    width: 44px;
+    height: 42px;
+    left: 50%;
+    margin-left: -21px;
+    cursor: default;
+    opacity: 1; }
+
+div.bottom.play div.contents {
+  opacity: 1;
+  transition: opacity, 0.3s, ease-in; }
+
+div.bottom.play div.menu.glasses {
+  background: url(../images/try.jpg); }
+  div.bottom.play div.menu.glasses div.shadow {
+    background-color: rgba(0, 0, 0, 0.145);
+    position: absolute; }
+
+div.bottom.play div.menu.phone {
+  background: url(../images/photo.jpg); }
+  div.bottom.play div.menu.phone div.shadow {
+    background-color: rgba(0, 0, 0, 0.145);
+    position: absolute; }
 
 audio.logo {
   position: absolute;
@@ -231,6 +320,9 @@ div.controller {
 body.play div.controller {
   display: block; }
 
+body.play .shadow.fade {
+  display: none; }
+
 div.controller div.close {
   position: fixed;
   top: 0px;
@@ -242,3 +334,44 @@ div.controller div.close {
   margin-bottom: 0px;
   margin-left: -1px;
   cursor: pointer; }
+
+.share-panel {
+  position: fixed;
+  width: 100%;
+  display: none; }
+
+body.share .menu.share {
+  opacity: 1;
+  background-image: url(../images/share2.svg);
+  background-color: rgba(255, 255, 255, 0.855);
+  z-index: 1; }
+
+body.share .share-panel {
+  display: block;
+  top: 42px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.855); }
+
+div.switch {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  z-index: 2;
+  background: white;
+  left: 50%;
+  border-radius: 300px;
+  margin-left: -17px;
+  margin-top: -8px;
+  transition: transform, 0.3s, ease-in; }
+
+.box.play div.switch {
+  transform: translateX(26px); }
+
+.box.stop img.logo-play {
+  display: none; }
+
+.box.stop div.switch {
+  display: none; }
+
+.box.stop div.cover {
+  display: block; }

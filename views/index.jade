@@ -2,7 +2,7 @@ doctype html
 html
   head
     meta(charset="utf-8")
-    title= "Sync"
+    title= "Uiine"
     meta(http-equiv="X-UA-Compatible", content="IE=EmulateIE7, IE=9")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     link(rel="stylesheet", href="./styles/main.css")
@@ -13,47 +13,66 @@ html
         div.menu.search
         div.menu.share
       iframe.play_ground(src="")
-      div.main
+      div.main.box
         div.shadow.fade
-          img.logo.fade(src="./images/logo.png")
-          h2.logo.fade(data='main.sub-title')
-                                         span 
-                                           a(href="http://www.skrillex.com/" target="_blank")= "Skrillex"
-                                         |  + 
+          img.logo.fade(src="./images/logo.png", style="max-width:296.737px;")
+          // h2.logo.fade(data='main.sub-title')
                                          span
-                                           a(href="https://www.youtube.com/user/fracionado" target="_blank")= "Fracionado"
+                                           a(href="http://www.skrillex.com/" target="_blank")= "Four Tet"
+                                         |  - 
+                                         span
+                                           a(href="https://www.youtube.com/user/fracionado" target="_blank")= "Angel Echoes"
           // a.fade(href="/skrillex")
-          img.logo-play(src="./images/play.svg")
+          img.logo-play.fade(src="./images/switch.svg")
+          div.switch
+          // div.switch.white.logo-play
+            input#switch-off(type="radio", name="switch")
+            input#switch-on(type="radio", name="switch", checked="")
+            span.toggle
           img.logo-more(src="./images/more.svg")
-          audio#logo-audio.logo(src="./sounds/logo-wrap.mp3", controls, preload)
-      div.bottom
+          audio#logo-audio.logo(src="./sounds/logo-wrap.mp3", controls, loop)
+          audio#logo-audio2.logo(src="./sounds/logo-wrap.mp3", controls, loop)
+        div.contents
+        div.cover
+      div.bottom.box.stop
         div.main
           div.shadow.fade
-            img.logo.fade(src="./images/logo.png")
-            h2.logo.fade(data='main.sub-title')
+            img.logo.fade(src="./images/logo_.png")
+            // h2.logo.fade(data='main.sub-title')
                                            span
                                              a(href="http://taylorswift.com/" target="_blank")= "Taylor Swift"
                                            |  +  
                                            span
                                              a(href="https://www.youtube.com/user/TannerPatrick" target="_blank")= "Tanner Patrick"
             // a.fade(href="/taylor_swift")
-            img.logo-play.fade(src="./images/play.svg")
+            img.logo-play.fade(src="./images/play.svg", style="display:block;")
+            // div.switch
             img.logo-more(src="./images/more.svg")
             // audio#logo-audio.logo(src="./sounds/logo-wrap.mp3", controls, preload)
+        div.contents
+        div.cover
         div.bottom_menu
-          div.menu.phone
+          span#fsl.fade
+            a About Us
+            a(href="https://www.instagram.com/uiine.tokyo/", target="_blank", style="color:rgba(97,97,97,.855);text-decoration:none;cursor:default;") Instagram
+            a(href="https://twitter.com/UiineTokyo",  target="_blank", style="color:rgba(97,97,97,.855);text-decoration:none;cursor:default;") Twitter
+          span#fsr.fade
+            a © 2016 Uiine
+          // div.menu.phone
             div.shadow.fade
               // p= "About Sync"
               img.bottom_logo.fade(src="./images/about.png")
-          div.menu.glasses.edge
+          // div.menu.glasses.edge
             div.shadow.fade
               // p= "Try Sync"
               img.bottom_logo.fade(src="./images/try.png")
       div.controller
         div.close.top
+      div.share-panel
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
       script(src="./scripts/math.min.js")
       script(src="./scripts/lang.js")
       script(src="./scripts/main.js")
+      script(src="./scripts/audio.js")
       // script(src="http://api.html5media.info/1.1.8/html5media.min.js")
       // script(src="./scripts/video.js")

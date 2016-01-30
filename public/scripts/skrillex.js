@@ -78,6 +78,12 @@
         origin_height = copy_height;
         origin_margin_top = copy_margin_top;
       }
+      if ((origin_margin_top - Math.floor(origin_margin_top)) === 0.5) {
+        origin_margin_top = Math.floor(origin_margin_top);
+      }
+      if ((copy_margin_top - Math.floor(copy_margin_top)) === 0.5) {
+        copy_margin_top = Math.floor(copy_margin_top);
+      }
       setStyle($div_origin, origin_margin_top, 'margin-top');
       setStyle($div_copy, copy_margin_top, 'margin-top');
       setSize($div_origin, origin_height, 'height');

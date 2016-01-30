@@ -3,7 +3,7 @@
     var $controller_box_close, $logo_audio, $logo_play, $logo_wrap, $resize, $window, endAudio;
     $resize = false;
     $window = $(window);
-    $logo_play = $('img.logo-play');
+    $logo_play = $('.main.box .logo-play, .switch');
     $logo_wrap = $('div.logo-wrap');
     $logo_audio = $('#logo-audio')[0];
     $controller_box_close = $('div.controller > div.close');
@@ -17,14 +17,14 @@
       main.init($height, $width);
     };
     $logo_play.click(function() {
-      if ($logo_audio.paused === false) {
-        $logo_audio.pause();
-        $logo_wrap.removeClass('play');
+      if ($(this).parents(".box").hasClass("play") === true) {
+        console.log($logo_audio.volume);
+        return $logo_audio.play();
       } else {
-        $logo_audio.play();
-        $logo_wrap.addClass('play');
+        return $logo_audio.pause();
       }
     });
+    return;
     $logo_audio.onended = function() {
       endAudio();
     };

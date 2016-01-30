@@ -4,7 +4,7 @@ do (math, $) ->
   
   $window = $(window)
 	
-  $logo_play = $('img.logo-play')
+  $logo_play = $('.main.box .logo-play, .switch')
   $logo_wrap = $('div.logo-wrap')
   $logo_audio = $('#logo-audio')[0]
   
@@ -20,12 +20,11 @@ do (math, $) ->
     return    
   
   $logo_play.click ->
-    if $logo_audio.paused == false
-      $logo_audio.pause()
-      $logo_wrap.removeClass 'play'
-    else
-      $logo_audio.play()
-      $logo_wrap.addClass 'play'
+      if $(this).parents(".box").hasClass("play") == true
+        console.log($logo_audio.volume)
+        $logo_audio.play()
+      else
+        $logo_audio.pause()
     return
 	
   $logo_audio.onended = ->
